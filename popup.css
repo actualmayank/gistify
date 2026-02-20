@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.light {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  .card {
+    width: 340px;
+    min-height: 240px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeSlideIn 0.4s ease-out forwards;
+    box-sizing: border-box;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .description {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  #toggle-theme {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  footer {
+    margin-top: auto;
+    font-size: 13px;
+    text-align: center;
+    color: inherit;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
